@@ -18,13 +18,35 @@ public class Main
         Snack water = new Snack(5, "Water", 20, 2.75, 2);
 
         jane.buyItem(soda.getCost() * 4);
+        soda.buySnack(4);
         System.out.println(jane.getName() + " has " + jane.getCash());
-        System.out.println("there are " + soda.getQuantity() + " left");
+        System.out.println("there are " + soda.getQuantity() + " Sodas left");
 
         jane.buyItem(pretzel.getCost());
+        pretzel.buySnack(1);
         System.out.println(jane.getName() + " has " + jane.getCash());
-        System.out.println("there are " + pretzel.getQuantity() + " left");
-        
+        System.out.println("there are " + pretzel.getQuantity() + " Pretzels left");
+
+        bob.buyItem(soda.getCost() * 2);
+        soda.buySnack(2);
+        System.out.println(bob.getName() + " has " + bob.getCash());
+        System.out.println("there are " + soda.getQuantity() + " Sodas left");
+
+        jane.addCash(10.00);
+        System.out.println(jane.getName() + " found 10.00 and now has " + jane.getCash());
+
+        jane.buyItem(chocolateBar.getCost() * 2);
+        chocolateBar.buySnack(2);
+        System.out.println(jane.getName() + " has " + jane.getCash());
+        System.out.println("there are " + chocolateBar.getQuantity() + " Chocolate Bars left");
+
+        pretzel.addQuantity(12);
+        System.out.println("there are " + pretzel.getQuantity() + "Pretzels left");
+
+        bob.buyItem(pretzel.getCost() * 3);
+        pretzel.buySnack(3);
+        System.out.println(bob.getName() + " has " + bob.getCash());
+        System.out.println("there are " + pretzel.getQuantity() + " Pretzels left");
 
     }
 }
