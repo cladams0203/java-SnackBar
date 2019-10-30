@@ -1,6 +1,6 @@
 package snackbar;
 
-import jdk.javadoc.internal.doclets.toolkit.resources.doclets;
+
 
 public class Customer
 {
