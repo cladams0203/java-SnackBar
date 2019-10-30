@@ -8,6 +8,15 @@ public class Snack
     private double cost;
     private int vendingMachineId;
 
+    public Snack(int id, String name, int quantity, double cost, int vendingMachineId)
+    {
+        this.id =id;
+        this.name = name;
+        this.quantity = quantity;
+        this.cost = cost;
+        this.vendingMachineId = vendingMachineId;
+    }
+
     public void setId(int id)
     {
         this.id = id;
