@@ -40,7 +40,20 @@ public class Snack
     {
         return vendingMachineId;
     }
-    public void setQuantity(int quantity)
+    public void addQuantity(int add)
     {
+        this.quantity = quantity + add;
+    }
+    public int getQuantity()
+    {
+        return quantity;
+    }
+    public void buySnack(int buy)
+    {
+        this.quantity = quantity - buy;
+    }
+    public double getTotal(double amount)
+    {
+        return cost * amount;
     }
 }
